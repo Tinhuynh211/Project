@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 a:hover {
   color: #86db9f;
   text-decoration: none;
@@ -1567,4 +1568,9 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+
+.doitac {
+    display:flex;
+    
 }

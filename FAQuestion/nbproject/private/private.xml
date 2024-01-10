@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/assets/img/favicon.png</file>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/assets/img/course-details.jpg</file>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/assets/img/hero-bg.jpg</file>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/Home.jsp</file>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/assets/img/events-2.jpg</file>
-            <file>file:/C:/Users/ADMIN/Desktop/FAQuestion/web/assets/img/events-1.jpg</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/About.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Register.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/assets/img/donga.jpeg</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/CoursesDetail.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Home.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/layouts/Guest/headerGuest.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/layouts/User/headerUser.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Courses.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Login.jsp</file>
         </group>
     </open-files>
 </project-private>
