@@ -46,42 +46,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- ======= Modal Đăng Ký ======= -->
-<div id="registrationModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Đăng Ký Tài Khoản</h2>
-    <!-- Thêm biểu mẫu đăng ký của bạn ở đây -->
-    <form action="registration_process.jsp" method="post">
-      <!-- Các trường biểu mẫu đăng ký của bạn sẽ ở đây -->
-      <label for="username">Tên đăng nhập:</label>
-      <input type="text" id="username" name="username" required>
+ 
 
-      <label for="password">Mật khẩu:</label>
-      <input type="password" id="password" name="password" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <button type="submit">Đăng Ký</button>
-    </form>
-  </div>
-</div>
-
-<script>
-  // Hàm mở modal đăng ký
-  function openModal() {
-    document.getElementById("registrationModal").style.display = "block";
-  }
-
-  // Hàm đóng modal đăng ký
-  function closeModal() {
-    document.getElementById("registrationModal").style.display = "none";
-  }
-
-  // Đóng modal nếu người dùng nhấp ra ngoài modal
-  };
-</script>
 </head>
 
 <body>
@@ -91,7 +58,7 @@
     <div class="container d-flex align-items-center">
 
         <h1 class="logo me-auto">
-    <a href="index.html" style="color:#74B048;">FPT Software <br>
+    <a href="trangchu.jsp" style="color:#74B048;">FPT Software <br>
         <p style="color:#408073;">ACADEMY</p>
     </a>
 </h1>
@@ -99,7 +66,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="Home.jsp">Trang chủ</a></li>
+          <li><a class="active" href="trangchu.jsp">Trang chủ</a></li>
           <li><a href="About.jsp">Giới Thiệu</a></li>        
           <li><a href="trainers.html">Đào tạo</a></li>
           <li><a href="events.html">Lịch Khai Giảng</a></li>        
@@ -109,7 +76,8 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <button  class="get-started-btn" onclick="openModal();">Tham gia ngay</button>
+      <button class="get-started-btn"><a href="Login.jsp" style="color: black; text-decoration: none;">Tham gia ngay</a></button>
+
 
 
     </div>

@@ -26,9 +26,9 @@
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <!-- Template Main CSS File -->
+        
         <link href="assets/css/style.css" rel="stylesheet">
-
+        
     </head>
 
 
@@ -116,7 +116,7 @@
                                     Học viên của FPT Software Academy sẽ được hướng dẫn bởi đội ngũ giảng viên giàu kinh nghiệm cùng với đó là sự hỗ trợ nhiệt tình 24/7 của đội ngũ Mentor. Nếu như mô hình truyền thống học offline lấy người thầy làm trung tâm, thì FPT Software Academy lấy học viên làm trung tâm, cùng với content online đơn giản, dễ hiểu, lý thuyết ngắn gọn...
                                 </p>
                                 <div class="text-center">
-                                    <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                                    <a href="About.jsp" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -366,11 +366,11 @@
                         <div class="col-lg-2 col-md-6 footer-links">
                             <h4>Our Link</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Trainer</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Trang chủ</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Giới thiệu</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Đào tạo</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Chăm sóc khách hàng</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Chính sách bảo mật</a></li>
                             </ul>
                         </div>
 
