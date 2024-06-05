@@ -55,79 +55,93 @@ public class LoginAccount extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        UserDAO userDAO = new UserDAO();
-        String Email = request.getParameter("Email");
-        String password = request.getParameter("password");
-        HttpSession mySession = request.getSession();
-        boolean checkLoginValid = true;
-        if (Email == null || Email.equals("")) {
-            request.setAttribute("errEmail", "Email is not valid");
-            checkLoginValid = false;
-        } else {
-            request.setAttribute("valueUsername", Email);
-        }
+    // ...
 
-        if (password == null || password.equals("")) {
-            request.setAttribute("errPassword", "Password is not valid");
-            checkLoginValid = false;
+// ...
 
-        } else {
-            request.setAttribute("valuePassword", password);
-        }
+// ...
 
-        if (checkLoginValid) {
+@Override
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    HttpSession mySession = request.getSession();
 
-            boolean checkLogin = true;
-            PrintWriter out = response.getWriter();
-
-            // check username in DB
-            if (userDAO.isEmailExists(Email) == false) {
-                mySession.setAttribute("status", "failedUsername");
-                checkLogin = false;
-                request.setAttribute("valueUsername", "");
-
-            } else {
-                // Next, check password of username in DB
-            //    EncryptPassword encryptPassword = new EncryptPassword();
-             //   password = encryptPassword.toSHA1(password);
-                if (userDAO.isUserExists(Email, password) == false) {
-                    mySession.setAttribute("status", "failedPassword");
-                    request.setAttribute("valuePassword", "");
-                    checkLogin = false;
-                    request.setAttribute("valueEmail", Email);
-                }
-
-            }
-
-            if (checkLogin) {
-
-                request.setAttribute("valueUsername", "");
-                request.setAttribute("valuePassword", "");
-                request.setAttribute("errUsername", "");
-                request.setAttribute("errPassword", "");
-                request.setAttribute("status", "success");
-
-                User userSession = userDAO.getUserByEmail(Email, password);
-                mySession.setAttribute("userSession", userSession);
-//
-//                if (userSession.getUsername().equals("admin")) {
-//                    response.sendRedirect("viewAdmin.jsp");
-//                    return;
-//                }
-
-//                    request.getRequestDispatcher("UserProfileServlet").forward(request, response);
-                request.getRequestDispatcher("trangchu.jsp").forward(request, response);
-                return;
-            }
-
-        }
-//        response.sendRedirect("login.jsp");
-        request.getRequestDispatcher("Login.jsp").forward(request, response);
-
+    // Kiểm tra xem người dùng đã đăng nhập chưa
+    if (mySession.getAttribute("userSession") != null) {
+        // Người dùng đã đăng nhập, chuyển hướng đến trang UserProfile
+        response.sendRedirect("userProfile.jsp");
+        return;
     }
+
+    // Nếu chưa đăng nhập, xử lý đăng nhập
+    UserDAO userDAO = new UserDAO();
+    String email = request.getParameter("Email");
+    String password = request.getParameter("password");
+    boolean checkLoginValid = true;
+
+    if (email == null || email.trim().isEmpty()) {
+        request.setAttribute("errEmail", "Email is not valid");
+        checkLoginValid = false;
+    } else {
+        request.setAttribute("valueUsername", email);
+    }
+
+    if (password == null || password.trim().isEmpty()) {
+        request.setAttribute("errPassword", "Password is not valid");
+        checkLoginValid = false;
+    } else {
+        request.setAttribute("valuePassword", password);
+    }
+
+    if (checkLoginValid) {
+        boolean checkLogin = true;
+
+        // Kiểm tra username trong DB
+        if (!userDAO.isEmailExists(email)) {
+            mySession.setAttribute("status", "failedUsername");
+            checkLogin = false;
+            request.setAttribute("valueUsername", "");
+        } else {
+            // Kiểm tra mật khẩu của username trong DB
+            // password = encryptPassword.toSHA1(password);
+            if (!userDAO.isUserExists(email, password)) {
+                mySession.setAttribute("status", "failedPassword");
+                request.setAttribute("valuePassword", "");
+                checkLogin = false;
+                request.setAttribute("valueEmail", email);
+                request.setAttribute("errorMessage", "Incorrect password");
+            }
+        }
+
+        if (checkLogin) {
+            request.setAttribute("valueUsername", "");
+            request.setAttribute("valuePassword", "");
+            request.setAttribute("errUsername", "");
+            request.setAttribute("errPassword", "");
+            request.setAttribute("status", "success");
+
+            User userSession = userDAO.getUserByEmail(email, password);
+            mySession.setAttribute("userSession", userSession);
+
+            // Chuyển hướng đến trang UserProfile
+            response.sendRedirect("userProfile.jsp");
+            return;
+        } else {
+            // Thêm thông báo khi mật khẩu sai
+            request.setAttribute("errorMessage", "Incorrect password");
+        }
+    }
+
+    // Nếu đăng nhập không thành công, chuyển hướng đến trang Login
+    request.getRequestDispatcher("Login.jsp").forward(request, response);
+}
+
+// ...
+
+// ...
+
+// ...
+
 
     
 

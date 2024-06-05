@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
-<head>
+    <head>
         <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
         <meta charset="ISO-8859-1">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
         <meta content="" name="keywords">
+        <title>FPT ACADEMY</title>
 
         <!-- Favicons -->
-        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/FPTLOGO.png" rel="icon">
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
@@ -25,205 +26,190 @@
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <!-- Template Main CSS File -->
+
         <link href="assets/css/style.css" rel="stylesheet">
 
-       
     </head>
 
-<body>
 
-   <%@include file="layouts/Guest/headerGuest.jsp" %> 
 
-  <main id="main" data-aos="fade-in">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <h2>Courses</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-    <!-- ======= Courses Section ======= -->
-    <section id="courses" class="courses">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="course-item">
-              <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
-                  <p class="price">$169</p>
-                </div>
-
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                    <span>Antonio</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;65
-                  </div>
-                </div>
-              </div>
+    <body>
+        <%@include file="layouts/Guest/headerGuest.jsp" %> 
+        <section id="hero" class="d-flex justify-content-center align-items-center">
+            <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                <h1>Học Thử Miễn Phí<br>Cùng Chuyên Gia tại FPT Software</h1>
+                <h2>Học viện đào tạo kỹ sư Công nghệ thông tin trực thuộc FPT Software</h2>
+                <a href="courses.html" class="btn-get-started">Tìm hiểu thêm</a>
             </div>
-          </div> <!-- End Course Item-->
+        </section><!-- End Hero -->
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$250</p>
+        <main id="main">
+
+            <div id="content" role="main" class="content-area">
+
+                <div class="container section-title-container custom-section-title title-small-border">
+                    <h1 class="section-title section-title-normal"><b></b><span class="section-title-main">Lịch khai giảng</span><b></b></h1>
                 </div>
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div>
-              </div>
+                <section class="section schedule-section">
+                    <div class="container">
+                        <form action="" method="get" class="form-filter">
+                            <!-- Your existing filter dropdowns and buttons -->
+
+                            <div class="list-items mt-half">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Khoá học</th>
+                                            <th>Ngày khai giảng</th>
+                                            <th>Khu vực</th>
+                                            <th>Lịch học</th>
+                                            <th>Thời lượng</th>
+                                            <th>Chỗ trống</th>
+                                            <th>Đăng ký</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Example rows with registration buttons -->
+                                        <tr>
+                                            <td>[HCM] Full-stack Java Web Developer</td>
+                                            <td>19-01-2024</td>
+                                            <td>Hồ Chí Minh</td>
+                                            <td>18h - 21h Thứ 2-4-6</td>
+                                            <td>216 giờ</td>
+                                            <td>6/20</td>
+                                            <td>
+                                                <!--<button class="btn item-action">Đăng ký</button>-->
+                                                <button type="button" class="btn item-action" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    Đăng ký 
+                                                </button>
+                                                <!-----------------------modal----------------------->
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-------------------end modal------------------>
+                                            </td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="box-pagination">
+                                <div class="pagination">
+                                    <a href="#" class="current">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                </div>
+                                <div>
+                                    <span>Rows per page</span>
+                                    <select name="per_page" class="per-page">
+                                        <option value="6">6</option>
+                                        <option value="12">12</option>
+                                        <option value="18">18</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
             </div>
-          </div> <!-- End Course Item-->
+        </main>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="course-item">
-              <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Content</h4>
-                  <p class="price">$180</p>
-                </div>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
 
-                <h3><a href="course-details.html">Copywriting</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-                    <span>Brandon</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;20
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;85
-                  </div>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>FPT ACADEMY</h3>
+                            <p>
+                            <ul>
+                                <li> Tòa nhà FPT Complex, đường Nam Kỳ Khởi Nghĩa, Quận Ngũ Hành Sơn, TP Đà Nẵng<br></li>
+                                <li> Tòa nhà FPT Massda, đường số 01, KCN An Đồn, Sơn Trà, Đà Nẵng<br>                            </li>
+                            </ul>                                                                                                                
+                            <strong>Email:</strong> FA.DN@fpt.com<br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Our Link</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Trang chủ</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Giới thiệu</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Đào tạo</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Chăm sóc khách hàng</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4>GIA NHẬP FPT SOFTWARE ACADEMY</h4>
+                            <p>Nhập email của bạn để có thể nhận được thông báo mới nhất của chúng tôi</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
             </div>
-          </div> <!-- End Course Item-->
+
+
 
         </div>
+    </footer><!-- End Footer -->
 
-      </div>
-    </section><!-- End Courses Section -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Mentor</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -3,20 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/controller/login/GoogleUtils.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/AdminView.jsp</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/controller/login/LoginGoogleServlet.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/ForgotPassword.jsp</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/Modal/User.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/trangchu.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/ListAccount.jsp</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/controller/login/LoginAccount.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/Modal/GooglePojo.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/Modal/Subject.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/layouts/User/headerUser.jsp</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/controller/login/ForgotPasswordServlet.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Courses.jsp</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/dal/DBContext.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/dal/UserDAO.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Register.jsp</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Thongtingmail.jsp</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/controller/login/Constants.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/Thontin.html</file>
-            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/Login.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/ListSubject.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/ListTopics.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/assets/css/style.css</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/layouts/Admin/SidebarAdmin.jsp</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/src/java/Modal/Topics.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/Project-University/FAQuestion/web/userProfile.jsp</file>
         </group>
     </open-files>
 </project-private>

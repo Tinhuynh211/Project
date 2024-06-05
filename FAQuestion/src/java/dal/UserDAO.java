@@ -4,16 +4,16 @@
  */
 package dal;
 
-import java.sql.Connection;
+import Modal.Subject;
+import Modal.Topics;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import Modal.User;
+import java.util.Date;
 
 /**
  *
@@ -161,6 +161,96 @@ public boolean isUserExists(String Email, String Password) {
 
         return null;
     }
+    public ArrayList<User> getUserData() {
+        ArrayList<User> account = new ArrayList<>();
+        String query = "SELECT AccountId, RoleId, Email, FullName, Phone, SchoolName, Gender  FROM [FA].[dbo].[ACCOUNT];";
+        try {
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                int AccountId = resultSet.getInt("AccountId");
+                int RoleId = resultSet.getInt("RoleId");
+                String Email = resultSet.getString("Email");                           
+                String FullName = resultSet.getString("FullName");
+                String Phone = resultSet.getString("Phone");
+                String SchoolName = resultSet.getString("SchoolName");
+                String Gender = resultSet.getString("Gender");
+                
+                
+
+                User user = new User();
+                user.setAccountId(AccountId);
+                user.setRoleId(RoleId);
+                user.setEmail(Email);                           
+                user.setFullName(FullName);
+                user.setPhone(Phone);
+                user.setSchoolName(SchoolName);
+                user.setGender(Gender);
+
+                account.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return account;
+    }
     
-    
+    public ArrayList<Subject> getSubjectData() {
+        ArrayList<Subject> subject = new ArrayList<>();
+        String query = "SELECT SubjectId, SubjectName FROM [FA].[dbo].[SUBJECTS];";
+        try {
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                int SubjectId = resultSet.getInt("SubjectId");             
+                String SubjectName = resultSet.getString("SubjectName");                                        
+                             
+                Subject a = new Subject();             
+                a.setSubjectId(SubjectId);
+                a.setSubjectName(SubjectName);
+                
+
+                subject.add(a);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return subject;
+    }
+    public ArrayList<Topics> getTopicData() {
+    ArrayList<Topics> topics = new ArrayList<>();
+    String query = "SELECT TopicId, TopicName, Duration, TotalQuestion, TopicType, Grade, CreateDate, Status, StartTestDate, FinishTestDate, SubjectId FROM [FA].[dbo].[TOPICS];";
+    try {
+        PreparedStatement statement = connection.prepareStatement(query);
+        ResultSet resultSet = statement.executeQuery();
+
+        while (resultSet.next()) {
+            int topicId = resultSet.getInt("TopicId");
+            String topicName = resultSet.getString("TopicName");
+            int duration = resultSet.getInt("Duration");
+            int totalQuestion = resultSet.getInt("TotalQuestion");
+            String topicType = resultSet.getString("TopicType");
+            String grade = resultSet.getString("Grade");
+            Date createDate = resultSet.getDate("CreateDate");
+            String status = resultSet.getString("Status");
+            Date startTestDate = resultSet.getDate("StartTestDate");
+            Date finishTestDate = resultSet.getDate("FinishTestDate");
+            int subjectId = resultSet.getInt("SubjectId");
+
+            Topics topic = new Topics(topicId, topicName, duration, totalQuestion, topicType, grade,
+                    createDate, status, startTestDate, finishTestDate, subjectId);
+
+            topics.add(topic);
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+
+    return topics;
+}
+
 }

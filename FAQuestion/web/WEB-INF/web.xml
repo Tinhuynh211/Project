@@ -12,6 +12,14 @@
         <servlet-name>LoginAccount</servlet-name>
         <servlet-class>controller.login.LoginAccount</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RunWeb</servlet-name>
+        <servlet-class>controller.login.RunWeb</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutAccount</servlet-name>
+        <servlet-class>controller.login.LogoutAccount</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ForgotPasswordServlet</servlet-name>
         <url-pattern>/ForgotPasswordServlet</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>LoginAccount</servlet-name>
         <url-pattern>/LoginAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RunWeb</servlet-name>
+        <url-pattern>/RunWeb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutAccount</servlet-name>
+        <url-pattern>/LogoutAccount</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
